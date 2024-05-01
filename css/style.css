@@ -8,6 +8,7 @@
 */
 :root {
     --main-color: #F97316;
+    --hover-color: #334155;
 }
 
 body {
@@ -47,14 +48,14 @@ body {
 }
 
 .header .text-content {
-    height: 500px;
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     position: relative;
     z-index: 1;
-    width: 50%;
+    width: 60%;
 }
 
 .header .text-content .btn {
@@ -69,6 +70,19 @@ body {
 
 .header .text-content p {
     margin: 1.5rem 0;
+    position: relative;
+    padding-left: 3rem;
+    line-height: 28px;
+    width: 85%;
+}
+
+.header .text-content p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: white;
 }
 
 .header .text-content h6 {
@@ -81,7 +95,7 @@ a.btn.play-video-btn {
     padding: 0 !important;
     width: 55px;
     height: 55px;
-    margin-left: 1rem;
+    margin-left: 2rem;
     background-color: white;
     border-radius: 50%;
     color: var(--main-color);
@@ -101,8 +115,13 @@ a.btn.play-video-btn i {
     color: var(--main-color);
 }
 
-.btn-main-color {
+.bg-main-color {
     background-color: var(--main-color);
+    color: white;
+}
+
+.bg-main-color:hover {
+    background-color: var(--hover-color);
     color: white;
 }
 
