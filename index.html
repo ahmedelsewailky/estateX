@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,120 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 
     <!-- Css Files & Libraries -->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/fontkiko/css/kiko-all.min.css">
+    <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <button class="btn btn-danger">Button</button>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Rent
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sell
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex phone-info">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class='bx bx-phone fs-4 text-main-color'></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
+                                    <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex mail-info">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class='bx bx-envelope fs-4 text-main-color'></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
+                                    <span class="fs-14 fw-semibold">example@mail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="text-content">
+                        <h6>Welcome to <span>estateX</span></h6>
+                        <h2>We are a real estate agency</h2>
+                        <p>The customer himself, the customer will be able to pursue the adipiscing of the company.</p>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-main-color" role="button">Make an enquiry</a>
+                            <a href="#" class="btn play-video-btn pulse" role="button">
+                                <i class="bx bx-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
-    
+
 
     <!-- Js Files & Libraries -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
 </body>
+
 </html>
