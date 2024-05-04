@@ -7,7 +7,11 @@
     License: MIT
 */
 :root {
-    --main-color: #F97316;
+    --main-color-rgb-code: 255 127 80;
+    --primary-color: #ff7f50;
+    --primary-hover-color: #ff6348;
+    --dark-color: #2C3A47;
+    --dark-hover-color: #1f2428;
     --hover-color: #334155;
 }
 
@@ -22,7 +26,7 @@ body {
 
 .section-title {
     font-size: 13px;
-    color: var(--main-color);
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -103,7 +107,7 @@ a.btn.play-video-btn {
     margin-left: 2rem;
     background-color: white;
     border-radius: 50%;
-    color: var(--main-color);
+    color: var(--primary-color);
     display: grid;
     place-content: center;
 }
@@ -130,14 +134,14 @@ a.btn.play-video-btn i {
 /*  ======================================================================================== 
     ============   CUSTOM CLASSES 
     ========================================================================================  */
-.section.about-us ul {
+.section ul {
     padding: 0;
     margin: 0;
     list-style: none;
     overflow: hidden;
 }
 
-.section.about-us ul li {
+.section ul li {
     list-style: none;
     width: 50%;
     float: left;
@@ -146,8 +150,8 @@ a.btn.play-video-btn i {
     align-items: center;
 }
 
-.section.about-us ul li i {
-    background-color: rgb(249 115 22 / 20%);
+.section ul li i {
+    background-color: rgb(var(--main-color-rgb-code) / 20%);
     width: 45px;
     height: 45px;
     display: grid;
@@ -155,14 +159,14 @@ a.btn.play-video-btn i {
     font-size: 19px;
     border-radius: 100%;
     margin-right: 1rem;
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 .section.about-us .alert-quote {
-    background-color: rgb(249 115 22 / 10%);
+    background-color: rgb(var(--main-color-rgb-code) / 10%);
     padding: 1.5rem;
     color: #475569;
-    border-left: 5px solid var(--main-color);
+    border-left: 5px solid var(--primary-color);
     margin: 1rem 0;
 }
 
@@ -216,7 +220,7 @@ section.section.statistic h6:after {
     left: 0;
     bottom: 0px;
     z-index: -1;
-    background: linear-gradient(to top, var(--main-color), transparent);
+    background: linear-gradient(to top, var(--primary-color), transparent);
 }
 
 .static-item {
@@ -250,16 +254,16 @@ section.section.statistic h6:after {
 /*  ======================================================================================== 
     ============   CUSTOM CLASSES 
     ========================================================================================  */
-.text-main-color {
-    color: var(--main-color);
+.text-primary-color {
+    color: var(--primary-color);
 }
 
-.bg-main-color {
-    background-color: var(--main-color);
+.bg-primary-color {
+    background-color: var(--primary-color);
     color: white;
 }
 
-.bg-main-color:hover {
+.bg-primary-color:hover {
     background-color: var(--hover-color);
     color: white;
 }
@@ -270,11 +274,11 @@ section.section.statistic h6:after {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0px rgba(249, 115, 22, .5);
+        box-shadow: 0 0 0 0px rgba(var(--main-color-rgb-code) / .5);
     }
 
     100% {
-        box-shadow: 0 0 0 30px rgba(249, 115, 22, 0);
+        box-shadow: 0 0 0 30px rgba(var(--main-color-rgb-code) / 0);
     }
 }
 
@@ -294,7 +298,7 @@ section.section.statistic h6:after {
 .btn:focus {
     outline: none;
     box-shadow: none;
-    border-color: var(--main-color);
+    border-color: var(--primary-color);
 }
 
 .btn {
@@ -304,17 +308,21 @@ section.section.statistic h6:after {
     padding-left: 1rem;
     padding-right: 1rem;
     position: relative;
-}
-
-.btn-warning {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #F97316;
-    --bs-btn-border-color: #F97316;
-    --bs-btn-hover-border-color: #F97316;
     z-index: 1;
+    font-size: 13px;
+    --bs-btn-hover-color: var(--dark-color) !important; 
 }
 
-.btn-warning::after {
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-hover-bg: var(--primary-hover-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-hover-color);
+    --bs-btn-active-bg: var(--primary-hover-color);
+    --bs-btn-active-border-color: var(--primary-hover-color);
+}
+
+.btn::after {
     content: '';
     position: absolute;
     width: 0;
@@ -327,9 +335,18 @@ section.section.statistic h6:after {
 
 }
 
-.btn-warning:hover:after {
+.btn:hover:after {
     width: 100%;
+} 
+
+.text-primary {
+    color: var(--primary-color) !important;
 }
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
 
 /*  ======================================================================================== 
     ============   CUSTOM UTILITIES 
