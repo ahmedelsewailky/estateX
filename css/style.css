@@ -16,18 +16,34 @@
 }
 
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
 }
 
-.section {
-    margin: 3rem 0;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin: 5rem 0;
 }
 
 .section-title {
     font-size: 13px;
     color: var(--primary-color);
     text-transform: uppercase;
+}
+
+section h2 {
+    margin: 1rem 0 3rem;
+    font-size: 40px;
 }
 
 /*  ======================================================================================== 
@@ -100,23 +116,6 @@ body {
     letter-spacing: 1px;
 }
 
-a.btn.play-video-btn {
-    padding: 0 !important;
-    width: 55px;
-    height: 55px;
-    margin-left: 2rem;
-    background-color: white;
-    border-radius: 50%;
-    color: var(--primary-color);
-    display: grid;
-    place-content: center;
-}
-
-a.btn.play-video-btn i {
-    font-size: 35px;
-    margin-left: 6px;
-}
-
 /*  ======================================================================================== 
     ============   ESTATE SEARCH BOX
     ========================================================================================  */
@@ -134,14 +133,11 @@ a.btn.play-video-btn i {
 /*  ======================================================================================== 
     ============   CUSTOM CLASSES 
     ========================================================================================  */
-.section ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+ul.list-icon {
     overflow: hidden;
 }
 
-.section ul li {
+ul.list-icon li {
     list-style: none;
     width: 50%;
     float: left;
@@ -150,11 +146,11 @@ a.btn.play-video-btn i {
     align-items: center;
 }
 
-.section ul li i {
+ul.list-icon li i {
     background-color: rgb(var(--main-color-rgb-code) / 20%);
     width: 45px;
     height: 45px;
-    display: grid;
+    display: grid !important;
     place-content: center;
     font-size: 19px;
     border-radius: 100%;
@@ -162,7 +158,7 @@ a.btn.play-video-btn i {
     color: var(--primary-color);
 }
 
-.section.about-us .alert-quote {
+section.about-us .alert-quote {
     background-color: rgb(var(--main-color-rgb-code) / 10%);
     padding: 1.5rem;
     color: #475569;
@@ -170,18 +166,16 @@ a.btn.play-video-btn i {
     margin: 1rem 0;
 }
 
-.section.about-us .position-relative {
+section.about-us .position-relative {
     display: grid;
     place-content: center;
-    width: 250px;
+    width: 380px;
     overflow: hidden;
-    height: 160px;
     border-radius: 1rem;
-    margin-top: -130px;
+    margin-top: -210px;
 }
 
-.section.about-us .position-relative a {
-    z-index: 1;
+section.about-us .position-relative .play-video-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -189,21 +183,36 @@ a.btn.play-video-btn i {
     margin: 0;
 }
 
-.section.about-us .position-relative img {
-    width: 250px;
-    height: 160px;
-    object-fit: fill;
+.play-video-btn {
+    z-index: 1;
+    margin: 0 0 0 1rem;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--primary-color);
+    display: grid;
+    place-content: center;
+    font-size: 35px;
+}
+
+.play-video-btn i {
+    margin-left: 6px;
+}
+
+section.about-us .position-relative img {
+    width: 100%;
 }
 
 /*  ======================================================================================== 
     ============   STATISTICS SECTION 
     ========================================================================================  */
-section.section.statistic {
+section.statistic {
     background-color: whitesmoke;
     padding: 4rem 0;
 }
 
-section.section.statistic h6 {
+section.statistic h6 {
     font-weight: 700;
     position: relative;
     width: 90%;
@@ -212,7 +221,7 @@ section.section.statistic h6 {
     z-index: 1;
 }
 
-section.section.statistic h6:after {
+section.statistic h6:after {
     content: '';
     width: 65%;
     height: 12px;
@@ -252,22 +261,8 @@ section.section.statistic h6:after {
 }
 
 /*  ======================================================================================== 
-    ============   CUSTOM CLASSES 
+    ============   GLOBAL 
     ========================================================================================  */
-.text-primary-color {
-    color: var(--primary-color);
-}
-
-.bg-primary-color {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.bg-primary-color:hover {
-    background-color: var(--hover-color);
-    color: white;
-}
-
 .pulse {
     animation: pulse 2s infinite;
 }
@@ -310,7 +305,7 @@ section.section.statistic h6:after {
     position: relative;
     z-index: 1;
     font-size: 13px;
-    --bs-btn-hover-color: var(--dark-color) !important; 
+    --bs-btn-hover-color: var(--dark-color) !important;
 }
 
 .btn-primary {
@@ -337,7 +332,7 @@ section.section.statistic h6:after {
 
 .btn:hover:after {
     width: 100%;
-} 
+}
 
 .text-primary {
     color: var(--primary-color) !important;
@@ -347,82 +342,243 @@ section.section.statistic h6:after {
     background-color: var(--primary-color) !important;
 }
 
+/*  ======================================================================================== 
+    ============   SERVICES SECTION 
+    ========================================================================================  */
+section.services {
+    padding: 4rem 0;
+    background-color: whitesmoke;
+}
+
+section.services .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    height: 100%;
+    position: relative;
+}
+
+section.services .card-body {
+    padding: 3rem;
+}
+
+section.services .card h5 {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+section.services .card p {
+    line-height: 26px;
+}
+
+section.services .card a {
+    color: #607D8B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section.services .card:hover a {
+    color: var(--primary-color);
+}
+
+section.services .card::after {
+    background-color: var(--primary-color);
+    width: 0;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    content:
+        '';
+    transition: 0.3s linear;
+}
+
+section.services .card:hover:after {
+    width: 100%;
+}
+
 
 /*  ======================================================================================== 
-    ============   CUSTOM UTILITIES 
+    ============   FEATURED LISTING SECTION 
     ========================================================================================  */
-.fs-10 {
-    font-size: 10px;
+.featured-list-card .card-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
 }
 
-.fs-11 {
-    font-size: 11px;
-}
-
-.fs-12 {
+.featured-list-card .card-image span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
     font-size: 12px;
+    padding: 3px 6px;
+    text-transform: capitalize;
 }
 
-.fs-13 {
+.featured-list-card .card-image .location-gallery {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+    color: white;
+    align-items: center;
     font-size: 13px;
 }
 
-.fs-14 {
-    font-size: 14px;
+.featured-list-card .card-image .location-gallery .gallery {
+    background-color: rgb(255, 255, 255, .2);
+    padding: 0.5rem 0.85rem;
+    /* font-size: 12px; */
 }
 
-.fs-15 {
-    font-size: 15px;
-}
-
-.fs-16 {
-    font-size: 16px;
-}
-
-.fs-17 {
+.featured-list-card .card-image .location-gallery i {
     font-size: 17px;
+    vertical-align: text-top;
+    margin-right: 3px;
 }
 
-.fs-18 {
+.featured-list-card .card-image img {
+    transition: 0.3s linear;
+}
+
+.featured-list-card .card-image:hover img {
+    transform: scale(1.2);
+}
+
+.featured-list-card .card-body {
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #e8e5e5;
+}
+
+.featured-list-card span.price {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+}
+
+.featured-list-card h6 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.75rem 0;
+}
+
+.card-actions a {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
     font-size: 18px;
 }
 
-.fs-19 {
-    font-size: 19px;
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d5d5d5;
+    border-radius: 50%;
+    margin: 0 2px;
 }
 
-.fs-20 {
-    font-size: 20px;
+.owl-dots {
+    text-align: center;
+    margin: 8px auto;
 }
 
-.fs-21 {
-    font-size: 21px;
+.owl-carousel button.owl-dot.active {
+    background: var(--primary-color);
 }
 
-.fs-22 {
-    font-size: 22px;
+.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    border-radius: 50%;
+    place-content: center;
+    transition: 0.3s ease;
+    opacity: 0;
 }
 
-.fs-23 {
-    font-size: 23px;
+.owl-carousel .owl-nav button:hover {
+    background-color: var(--primary-color) !important;
+    color: white;
 }
 
-.fs-24 {
-    font-size: 24px;
-}
-
-.fs-25 {
-    font-size: 25px;
-}
-
-.fs-26 {
+.owl-carousel .owl-nav button i {
     font-size: 26px;
 }
 
-.fs-27 {
-    font-size: 27px;
+button.owl-prev {
+    left: 0;
 }
 
-.fs-28 {
-    font-size: 28px;
+button.owl-next {
+    right: 0;
+}
+
+.featured:hover .owl-nav button {
+    opacity: 1;
+}
+
+.featured:hover .owl-next {
+    transform: translateX(50px);
+}
+
+.featured:hover .owl-prev {
+    transform: translateX(-50px);
+}
+
+
+/*  ======================================================================================== 
+    ============   SKETCH PLANE SECTION 
+    ========================================================================================  */
+.sketch-details {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem;
+}
+
+.sketch-details h2 {
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.sketch-details p {
+    line-height: 29px;
+    margin-bottom: 3rem;
+}
+
+.sketch-details li {
+    display: flex;
+    padding: .5rem 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sketch-details li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed;
+    top: 50%;
+}
+
+.sketch-details li span {
+    background-color: var(--primary-color);
+    display: inline-block;
+    z-index: 1;
+    padding: 9px;
+    font-weight: 600;
+}
+
+.sketch-details ul {
+    width: 100%;
+    padding-left: 1rem;
 }
