@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--primary-color);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -158,7 +162,7 @@ ul.list-icon li i {
     color: var(--primary-color);
 }
 
-section.about-us .alert-quote {
+section.about-us-area .alert-quote {
     background-color: rgb(var(--main-color-rgb-code) / 10%);
     padding: 1.5rem;
     color: #475569;
@@ -166,7 +170,7 @@ section.about-us .alert-quote {
     margin: 1rem 0;
 }
 
-section.about-us .position-relative {
+section.about-us-area .position-relative {
     display: grid;
     place-content: center;
     width: 380px;
@@ -175,7 +179,7 @@ section.about-us .position-relative {
     margin-top: -210px;
 }
 
-section.about-us .position-relative .play-video-btn {
+section.about-us-area .position-relative .play-video-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -200,19 +204,19 @@ section.about-us .position-relative .play-video-btn {
     margin-left: 6px;
 }
 
-section.about-us .position-relative img {
+section.about-us-area .position-relative img {
     width: 100%;
 }
 
 /*  ======================================================================================== 
     ============   STATISTICS SECTION 
     ========================================================================================  */
-section.statistic {
+section.statistic-area {
     background-color: whitesmoke;
     padding: 4rem 0;
 }
 
-section.statistic h6 {
+section.statistic-area h6 {
     font-weight: 700;
     position: relative;
     width: 90%;
@@ -221,7 +225,7 @@ section.statistic h6 {
     z-index: 1;
 }
 
-section.statistic h6:after {
+section.statistic-area h6:after {
     content: '';
     width: 65%;
     height: 12px;
@@ -345,12 +349,12 @@ section.statistic h6:after {
 /*  ======================================================================================== 
     ============   SERVICES SECTION 
     ========================================================================================  */
-section.services {
+section.services-area {
     padding: 4rem 0;
     background-color: whitesmoke;
 }
 
-section.services .card {
+section.services-area .card {
     border: none;
     border-radius: 0;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
@@ -358,30 +362,30 @@ section.services .card {
     position: relative;
 }
 
-section.services .card-body {
+section.services-area .card-body {
     padding: 3rem;
 }
 
-section.services .card h5 {
+section.services-area .card h5 {
     margin: 1rem 0;
     font-weight: 600;
 }
 
-section.services .card p {
+section.services-area .card p {
     line-height: 26px;
 }
 
-section.services .card a {
+section.services-area .card a {
     color: #607D8B;
     text-decoration: none;
     font-weight: 500;
 }
 
-section.services .card:hover a {
+section.services-area .card:hover a {
     color: var(--primary-color);
 }
 
-section.services .card::after {
+section.services-area .card::after {
     background-color: var(--primary-color);
     width: 0;
     height: 5px;
@@ -392,7 +396,7 @@ section.services .card::after {
     transition: 0.3s linear;
 }
 
-section.services .card:hover:after {
+section.services-area .card:hover:after {
     width: 100%;
 }
 
