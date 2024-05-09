@@ -1,0 +1,588 @@
+/* 
+    Template name: EstateX - Free Bootstrap 5 Template
+    Author: Ahmed Elsewailky
+    Author url: https://github.com/ahmedelsewailky
+    Template url: https://github.com/ahmedelsewailky/estatex
+    Version: 1.0-2024
+    License: MIT
+*/
+:root {
+    --main-color-rgb-code: 255 127 80;
+    --primary-color: #ff7f50;
+    --primary-hover-color: #ff6348;
+    --dark-color: #2C3A47;
+    --dark-hover-color: #1f2428;
+    --hover-color: #334155;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+.section-title {
+    font-size: 13px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+section h2 {
+    margin: 1rem 0 3rem;
+    font-size: 40px;
+}
+
+/*  ======================================================================================== 
+    ============   NAVBAR 
+    ========================================================================================  */
+.navbar {
+    padding: 0;
+    height: 100px;
+    transition: 0.3s linear;
+}
+
+
+/*  ======================================================================================== 
+    ============   NAVBAR 
+    ========================================================================================  */
+.header {
+    background: url("../images/frontage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 5rem 0;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2196F3, transparent 50%);
+    top: 0;
+}
+
+.header .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 60%;
+}
+
+.header .text-content h2 {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.header .text-content p {
+    margin: 1.5rem 0;
+    position: relative;
+    padding-left: 3rem;
+    line-height: 28px;
+    width: 85%;
+}
+
+.header .text-content p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}
+
+.header .text-content h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/*  ======================================================================================== 
+    ============   ESTATE SEARCH BOX
+    ========================================================================================  */
+.estate-search-box {
+    background-color: white;
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    margin-top: -40px;
+    z-index: 1;
+    position: relative;
+}
+
+/*  ======================================================================================== 
+    ============   CUSTOM CLASSES 
+    ========================================================================================  */
+ul.list-icon {
+    overflow: hidden;
+}
+
+ul.list-icon li {
+    list-style: none;
+    width: 50%;
+    float: left;
+    margin: .5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.list-icon li i {
+    background-color: rgb(var(--main-color-rgb-code) / 20%);
+    width: 45px;
+    height: 45px;
+    display: grid !important;
+    place-content: center;
+    font-size: 19px;
+    border-radius: 100%;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+section.about-us-area .alert-quote {
+    background-color: rgb(var(--main-color-rgb-code) / 10%);
+    padding: 1.5rem;
+    color: #475569;
+    border-left: 5px solid var(--primary-color);
+    margin: 1rem 0;
+}
+
+section.about-us-area .position-relative {
+    display: grid;
+    place-content: center;
+    width: 380px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: -210px;
+}
+
+section.about-us-area .position-relative .play-video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.play-video-btn {
+    z-index: 1;
+    margin: 0 0 0 1rem;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--primary-color);
+    display: grid;
+    place-content: center;
+    font-size: 35px;
+}
+
+.play-video-btn i {
+    margin-left: 6px;
+}
+
+section.about-us-area .position-relative img {
+    width: 100%;
+}
+
+/*  ======================================================================================== 
+    ============   STATISTICS SECTION 
+    ========================================================================================  */
+section.statistic-area {
+    background-color: whitesmoke;
+    padding: 4rem 0;
+}
+
+section.statistic-area h6 {
+    font-weight: 700;
+    position: relative;
+    width: 90%;
+    font-size: 23px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+section.statistic-area h6:after {
+    content: '';
+    width: 65%;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+    background: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.static-item {
+    background-color: #e7e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    position: relative;
+}
+
+.static-item span.text {
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    border-radius: 35px;
+    font-weight: 600;
+}
+
+.static-item span.counter {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+/*  ======================================================================================== 
+    ============   GLOBAL 
+    ========================================================================================  */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(var(--main-color-rgb-code) / .5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px rgba(var(--main-color-rgb-code) / 0);
+    }
+}
+
+/*  ======================================================================================== 
+    ============   BOOTSTRAP MODIFICATIONS 
+    ========================================================================================  */
+.form-select,
+.btn {
+    border-radius: 0;
+    font-size: inherit;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-select:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    --bs-btn-hover-color: var(--dark-color) !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-hover-bg: var(--primary-hover-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-hover-color);
+    --bs-btn-active-bg: var(--primary-hover-color);
+    --bs-btn-active-border-color: var(--primary-hover-color);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s linear;
+
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/*  ======================================================================================== 
+    ============   SERVICES SECTION 
+    ========================================================================================  */
+section.services-area {
+    padding: 4rem 0;
+    background-color: whitesmoke;
+}
+
+section.services-area .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    height: 100%;
+    position: relative;
+}
+
+section.services-area .card-body {
+    padding: 3rem;
+}
+
+section.services-area .card h5 {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+section.services-area .card p {
+    line-height: 26px;
+}
+
+section.services-area .card a {
+    color: #607D8B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section.services-area .card:hover a {
+    color: var(--primary-color);
+}
+
+section.services-area .card::after {
+    background-color: var(--primary-color);
+    width: 0;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    content:
+        '';
+    transition: 0.3s linear;
+}
+
+section.services-area .card:hover:after {
+    width: 100%;
+}
+
+
+/*  ======================================================================================== 
+    ============   FEATURED LISTING SECTION 
+    ========================================================================================  */
+.featured-list-card .card-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.featured-list-card .card-image span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    text-transform: capitalize;
+}
+
+.featured-list-card .card-image .location-gallery {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+    color: white;
+    align-items: center;
+    font-size: 13px;
+}
+
+.featured-list-card .card-image .location-gallery .gallery {
+    background-color: rgb(255, 255, 255, .2);
+    padding: 0.5rem 0.85rem;
+    /* font-size: 12px; */
+}
+
+.featured-list-card .card-image .location-gallery i {
+    font-size: 17px;
+    vertical-align: text-top;
+    margin-right: 3px;
+}
+
+.featured-list-card .card-image img {
+    transition: 0.3s linear;
+}
+
+.featured-list-card .card-image:hover img {
+    transform: scale(1.2);
+}
+
+.featured-list-card .card-body {
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #e8e5e5;
+}
+
+.featured-list-card span.price {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+}
+
+.featured-list-card h6 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.75rem 0;
+}
+
+.card-actions a {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d5d5d5;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin: 8px auto;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: var(--primary-color);
+}
+
+.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    border-radius: 50%;
+    place-content: center;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.owl-carousel .owl-nav button i {
+    font-size: 26px;
+}
+
+button.owl-prev {
+    left: 0;
+}
+
+button.owl-next {
+    right: 0;
+}
+
+.featured:hover .owl-nav button {
+    opacity: 1;
+}
+
+.featured:hover .owl-next {
+    transform: translateX(50px);
+}
+
+.featured:hover .owl-prev {
+    transform: translateX(-50px);
+}
+
+
+/*  ======================================================================================== 
+    ============   SKETCH PLANE SECTION 
+    ========================================================================================  */
+.sketch-details {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem;
+}
+
+.sketch-details h2 {
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.sketch-details p {
+    line-height: 29px;
+    margin-bottom: 3rem;
+}
+
+.sketch-details li {
+    display: flex;
+    padding: .5rem 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sketch-details li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed;
+    top: 50%;
+}
+
+.sketch-details li span {
+    background-color: var(--primary-color);
+    display: inline-block;
+    z-index: 1;
+    padding: 9px;
+    font-weight: 600;
+}
+
+.sketch-details ul {
+    width: 100%;
+    padding-left: 1rem;
+}

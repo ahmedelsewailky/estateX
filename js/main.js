@@ -2,8 +2,11 @@ $(function () {
     "use strict";
 
     $("section.about-us-area").on("mousemove", function (e) {
-        $("section.about-us-area .position-relative").css({
+        $("section.about-us-area img:nth-child(1)").css({
             transform: `translateX(${e.clientX / 50}px) translateY(${e.clientY / 50}px)`
+        })
+        $("section.about-us-area img:nth-child(2)").css({
+            transform: `translateX(${e.clientX / 20}px) translateY(${e.clientY / 20}px)`
         })
     });
 
