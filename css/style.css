@@ -37,6 +37,11 @@ h2 {
     font-weight: 600;
 }
 
+p {
+    font-size: 13px;
+    line-height: 25px;
+}
+
 img {
     max-width: 100%;
 }
@@ -172,7 +177,6 @@ ul {
 
 .card p {
     font-size: 0.875rem;
-    line-height: 25px;
     margin-bottom: .5rem;
 }
 
@@ -231,4 +235,66 @@ ul {
     font-size: 19px;
     vertical-align: bottom;
     margin-right: 0.25rem;
+}
+
+.featured-list-card .card-body .price {
+    margin: .5rem 0;
+    display: block;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.featured-list-card .card-body h6 {
+    font-size: 18px;
+}
+
+.featured-list-card .card-body p {
+    margin: .5rem 0;
+}
+
+.featured-list-card .card-body ul {
+    margin-top: 1.5rem;
+}
+
+.featured-list-card .card-body {
+    border: 1px solid #e8e5e5;
+}
+
+/*  =========================================================================   Plane Area  */
+.sketch-details {
+    background-color: var(--main-color);
+    color: white;
+    padding: 4rem;
+}
+
+.sketch-details p {
+    margin: 2rem 0 4rem;
+}
+
+.sketch-details li {
+    margin-bottom: 1rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.sketch-details li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1px dashed rgb(255 255 255 / 50%);
+    top: 50%;
+}
+
+.sketch-details li span {
+    background-color: var(--main-color);
+    display: inline-block;
+    z-index: 1;
+    padding: 0 .75rem;
+    font-size: 13px;
+}
+
+.sketch-details li span:nth-child(1) {
+    font-weight: 600;
+    font-size: 14px;
 }
