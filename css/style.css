@@ -298,3 +298,31 @@ ul {
     font-weight: 600;
     font-size: 14px;
 }
+
+/*  =========================================================================   Aminities Area  */
+.aminity-card {
+    width: 250px;
+    display: grid;
+    place-content: center;
+    margin-bottom: 3.5rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    text-align: center;
+    transition: 0.2s linear;
+}
+
+.aminity-card:hover {
+    box-shadow: 2px 5px 10px rgb(0,0,0,0.1);
+}
+
+.aminity-card i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.aminity-card h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.75rem auto;
+}
