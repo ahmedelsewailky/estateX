@@ -744,3 +744,27 @@ a.play-video-btn.pulse {
     background-color: #434845;
     color: white;
 }
+
+
+/*  =========================================================================   Slider Range {page: search.html/sidebar}  */
+.slider-box {
+    width: 90%;
+    margin: 25px auto
+}
+
+.slider-box label,
+.slider-box input {
+    border: none;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 30%
+}
+
+.slider-box input {
+    width: 70%
+}
+
+.slider-box .slider {
+    margin: 25px 0
+}

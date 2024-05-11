@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateX - Free Bootstrap 5 Template</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Files & Libraries -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/niceselect/css/nice-select.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Rent
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sell
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex phone-info">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class='bx bx-phone fs-4 text-main-color'></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
+                                    <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex mail-info">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class='bx bx-envelope fs-4 text-main-color'></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
+                                    <span class="fs-14 fw-semibold">example@mail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section page-breadcrumb">
+            <div class="container">
+                <h2>Intelilligent Filter Box</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Find Your Dream Property</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <main class="filter-results-area">
+                        <div class="filter-options">
+                            <div class="grid-view">
+                                <a href="#" role="button" title="Thumbnail grid"><i class="bx bx-category"></i></a>
+                                <a href="#" role="button" title="Thumbnail grid"><i class="bx bx-list-ol"></i></a>
+                            </div>
+
+                            <div class="showing-number">
+                                <p>Showing 1-12 of 50 results</p>
+                            </div>
+
+                            <select name="sort" id="sort" title="Sorting view">
+                                <option data-display="Default Sorting">Default Sorting</option>
+                                <option value="">Sort by popularity</option>
+                                <option value="">Sort by new arrivals</option>
+                                <option value="">Sort by price: low to high</option>
+                                <option value="">Sort by price: high to low</option>
+                            </select>
+                        </div>
+
+                        <form action="#" method="get">
+                            <input type="text" name="search" class="form-select" placeholder="Search your keyword...">
+                            <button type="submit" class="btn" title="Search"><i class="bx bx-search"></i></button>
+                        </form>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="property-item">
+                                    <div class="property-image">
+                                        <img src="images/image-4.jpg" height="250" alt="">
+                                    </div>
+                                    <div class="property-details">
+                                        <span class="info-label">For Rent</span>
+                                        <h3 class="title">New Apartment Nice View</h3>
+                                        <div class="location">
+                                            <i class="bx bx-map"></i>
+                                            Naser City, Ciro, Egypt
+                                        </div>
+                                        <ul>
+                                            <li>3 Bed</li>
+                                            <li>2 Bath</li>
+                                            <li>4200 Square Ft.</li>
+                                        </ul>
+                                        <div class="actions">
+                                            <a href="#" class="ms-2" title="See details"><i
+                                                    class="bx bx-expand-alt"></i></a>
+                                            <a href="#" class="ms-2" title="Add to favorites"><i
+                                                    class="bx bx-heart"></i></a>
+                                            <a href="#" class="ms-2" title="Link"><i class="bx bx-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </main>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <aside class="filter-sidebar">
+                        <form action="search.html" method="get">
+                            <h4>Property Type</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        House
+                                        <span class="categorey-no">3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Single Family
+                                        <span class="categorey-no">3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Apartment
+                                        <span class="categorey-no">2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Office Villa
+                                        <span class="categorey-no">2,687</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Luxary Home
+                                        <span class="categorey-no">1,853</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Studio
+                                        <span class="categorey-no">893</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Amenities</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">3,924</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Floor Coverings
+                                        <span class="categorey-no">3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Internet
+                                        <span class="categorey-no">2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Build Wardrobes
+                                        <span class="categorey-no">2,687</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Supermarket
+                                        <span class="categorey-no">1,853</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Kids Zone
+                                        <span class="categorey-no">893</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Price Renge</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">Low Budget
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">$5,000 - $10,000</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Medium
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <span class="categorey-no">$10,000 - $30,000</span>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">High Budget
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">$30,000 Up</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Filter by price</h4>
+                            <div class="slider-box">
+                                <label for="priceRange">Price Range:</label>
+                                <input type="text" id="priceRange" readonly>
+                                <div id="price-range" class="slider"></div>
+                            </div>
+
+                            <h4>Bed/bath</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">Single
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <span class="categorey-no">3,924</span>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Double
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Up To 3
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">2,912</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Up To 5
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">2,687</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <h4>Catagory</h4>
+                            <ul>
+                                <li>
+                                    <label class="form-check-label">Buying
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <span class="categorey-no">3,924</span>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Renting
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">3,610</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="form-check-label">Selling
+                                        <input type="checkbox" class="form-check-input">
+                                        <span class="categorey-no">2,912</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="btn">Submit</button>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <section class="section call-to-action-area position-relative pb-0 mb-0">
+            <div class="container">
+                <div class="call-to-action-inner">
+                    <div class="d-md-flex align-items-center mb-0 text-center text-md-start">
+                        <div class="me-auto">
+                            <h6>Looking for your dream home?</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                        <a href="#" role="button">Get On Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <a href="index.html">EstateX</a>
+                        <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus
+                            veniam
+                            vitae modi est.</p>
+                        <ul class="nav flex-column ms-3">
+                            <li class="nav-item my-2">
+                                <i class="bx bx-map"></i>
+                                Naser City, Cairo, Egypt
+                            </li>
+                            <li class="nav-item my-2">
+                                <i class="bx bx-phone"></i>
+                                (+20) 123 456 789
+                            </li>
+                            <li class="nav-item my-2">
+                                <i class="bx bx-envelope"></i>
+                                example@email.com
+                            </li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" target="_blank" title="Github"><i class="bx bxl-github"></i></a>
+                            <a href="#" target="_blank" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#" target="_blank" title="Twitter"><i class="bx bxl-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <h6>Company</h6>
+                        <ul class="nav flex-column page-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link border-0">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <h6>News Letter</h6>
+                        <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+                        <form action="?" method="get">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email"
+                                autocomplete="email">
+                            <button type="button" class="btn" title="Subscribe"><i class="bx bx-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <div class="container">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <p class="text-capitalize text-center text-md-start">All rights resaved © 2024</p>
+                    <ul class="nav justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Js Files & Libraries -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="libs/niceselect/js/jquery.nice-select.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
