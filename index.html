@@ -129,7 +129,7 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="" id="" class="form-select" title="Select property state">
+                        <select name="property_estate" id="property_estate" class="form-select" title="Select property estate">
                             <option value="" hidden>Property State</option>
                             <option value="">Open house</option>
                             <option value="">Rent</option>
@@ -137,7 +137,7 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="" id="" class="form-select" title="Select property state">
+                        <select name="property_type" id="property_type" class="form-select" title="Select property type">
                             <option value="" hidden>Property Type</option>
                             <option value="">Apartment</option>
                             <option value="">Co-op</option>
@@ -197,34 +197,34 @@
         <section class="section statistic-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 align-self-center">
+                    <div class="col-md-2 align-self-center d-none d-md-block">
                         <h6><span class="fw-light">What are you</span> looking for?</h6>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="static-item">
                             <span class="text">APARTMENT</span>
                             <span><span class="counter">25</span>k</span>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="static-item">
                             <span class="text">CONDOMINIUM</span>
                             <span><span class="counter">560</span>+</span>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="static-item">
                             <span class="text">HOME</span>
                             <span><span class="counter">340</span>k</span>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="static-item">
                             <span class="text">OFFICE</span>
                             <span><span class="counter">30</span>k</span>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2 d-none d-md-block">
                         <div class="static-item">
                             <span class="text">SHOP</span>
                             <span><span class="counter">19</span>K</span>
@@ -639,7 +639,7 @@
                         </ul>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="images/sketch.png" height="550px" class="w-100" alt="">
+                        <img src="images/sketch.png" height="550" class="w-100" alt="">
                     </div>
                 </div>
             </div>
@@ -873,8 +873,8 @@
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
                         <h6>News Letter</h6>
                         <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="Your email">
+                        <form action="?" method="get">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email" autocomplete="email">
                             <button type="button" class="btn" title="Subscribe"><i class="bx bx-send"></i></button>
                         </form>
                     </div>

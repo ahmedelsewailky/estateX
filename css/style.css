@@ -313,9 +313,58 @@ a.play-video-btn.pulse {
 }
 
 /*  =========================================================================   Statistics  */
-section.section.statistic-area {
-    background-color: var(--main-color);
+.statistic-area {
     color: white;
+    padding: 0;
+    background: linear-gradient(to right, var(--main-color) 50%, #86efac 50%);
+}
+
+.statistic-area h6 span {
+    font-size: 17px;
+}
+
+.statistic-area h6 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.statistic-area .col-md-2:nth-child(2) {
+    background-color: #15803D;
+}
+
+.statistic-area .col-md-2:nth-child(3) {
+    background-color: #16A34A;
+}
+
+.statistic-area .col-md-2:nth-child(4) {
+    background-color: #22C55E;
+}
+
+.statistic-area .col-md-2:nth-child(5) {
+    background-color: #4ADE80;
+}
+
+.statistic-area .col-md-2:nth-child(6) {
+    background-color: #86EFAC;
+}
+
+.static-item .text {
+    display: block;
+}
+
+.static-item {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: #000;
+}
+
+.static-item .counter {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-right: 6px;
 }
 
 /*  =========================================================================   Property Store  */
