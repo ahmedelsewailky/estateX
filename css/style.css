@@ -768,3 +768,9 @@ a.play-video-btn.pulse {
 .slider-box .slider {
     margin: 25px 0
 }
+
+
+.slick-slide {
+    height: 350px;
+    overflow: hidden;
+}

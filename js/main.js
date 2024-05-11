@@ -81,4 +81,31 @@ $(function () {
         slide: function (event, ui) { $("#priceRange").val(ui.values[0] + " - " + ui.values[1]); }
     });
     $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1));
+
+    $('.property-gallery').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2,
+        arrows: true,
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //             arrows: false,
+        //             centerMode: true,
+        //             centerPadding: '40px',
+        //             slidesToShow: 1
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 480,
+        //         settings: {
+        //             arrows: false,
+        //             centerMode: true,
+        //             centerPadding: '40px',
+        //             slidesToShow: 1
+        //         }
+        //     }
+        // ]
+    });
 });
