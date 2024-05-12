@@ -4,7 +4,7 @@ $(function () {
     $(window).on("resize", function (e) {
         console.log(e.clientX);
     });
-    
+
     $("section.about-us-area").on("mousemove", function (e) {
         $("section.about-us-area img:nth-child(1)").css({
             transform: `translateX(${e.clientX / 50}px) translateY(${e.clientY / 50}px)`
@@ -86,28 +86,10 @@ $(function () {
     $('.property-gallery').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 2,
+        slidesToShow: 3,
         arrows: true,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
     });
 
     $("a[data-rel]").lightcase();

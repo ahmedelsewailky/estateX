@@ -750,17 +750,74 @@ a.play-video-btn.pulse {
     overflow: hidden;
 }
 
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.prev.slick-arrow {
+    left: 0;
+}
+
+.next.slick-arrow {
+    right: 0;
+}
+
+.slider-gallery:hover .next {
+    right: 50px;
+    opacity: 1 !important;
+}
+
+.slider-gallery:hover .prev {
+    left: 50px;
+    opacity: 1 !important;
+}
+
+.prev.slick-arrow:hover,
+.next.slick-arrow:hover  {
+    animation: pulseWhiteShadow 0.8s infinite;
+}
+
+@keyframes pulseWhiteShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255,255,255,50%);
+        opacity: 0;
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgb(255,255,255,0%);
+        opacity: 0;
+    }
+}
 
 /*  =========================================================================   Search.html  */
 .page-breadcrumb {
     background-color: #F1F5F9;
-    margin-top: 0;
+    margin: 0;
 }
 
 .page-breadcrumb .breadcrumb {
     margin-top: 1rem;
     font-size: 13px;
     margin-bottom: 0;
+    display: flex;
+    align-items: end;
+}
+
+.page-breadcrumb .breadcrumb i {
+    vertical-align: bottom;
+    margin-right: .5rem;
+    color: var(--main-color);
 }
 
 .filter-options {
@@ -966,3 +1023,6 @@ a.page-link {
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
+
+/*  =========================================================================   Single.html  */
