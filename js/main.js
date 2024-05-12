@@ -4,6 +4,7 @@ $(function () {
     $(window).on("resize", function (e) {
         console.log(e.clientX);
     });
+    
     $("section.about-us-area").on("mousemove", function (e) {
         $("section.about-us-area img:nth-child(1)").css({
             transform: `translateX(${e.clientX / 50}px) translateY(${e.clientY / 50}px)`
@@ -108,4 +109,6 @@ $(function () {
         //     }
         // ]
     });
+
+    $("a[data-rel]").lightcase();
 });
