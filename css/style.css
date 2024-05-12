@@ -745,61 +745,6 @@ a.play-video-btn.pulse {
     color: white;
 }
 
-.slick-slide {
-    height: 350px;
-    overflow: hidden;
-}
-
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    display: grid;
-    place-content: center;
-    transition: 0.3s;
-    opacity: 0;
-    z-index: 9;
-    cursor: pointer;
-}
-
-.prev.slick-arrow {
-    left: 0;
-}
-
-.next.slick-arrow {
-    right: 0;
-}
-
-.slider-gallery:hover .next {
-    right: 50px;
-    opacity: 1 !important;
-}
-
-.slider-gallery:hover .prev {
-    left: 50px;
-    opacity: 1 !important;
-}
-
-.prev.slick-arrow:hover,
-.next.slick-arrow:hover  {
-    animation: pulseWhiteShadow 0.8s infinite;
-}
-
-@keyframes pulseWhiteShadow {
-    0% {
-        box-shadow: 0 0 0 0 rgb(255,255,255,50%);
-        opacity: 0;
-    }
-
-    100% {
-        box-shadow: 0 0 0 20px rgb(255,255,255,0%);
-        opacity: 0;
-    }
-}
-
 /*  =========================================================================   Search.html  */
 .page-breadcrumb {
     background-color: #F1F5F9;
@@ -1026,3 +971,78 @@ a.page-link {
 
 
 /*  =========================================================================   Single.html  */
+.meta-category {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 13px;
+    padding: 4px 9px;
+    margin-right: 1rem;
+}
+
+[class^="meta"] i {
+    font-size: 18px;
+    color: var(--main-color);
+    margin-right: .25rem;
+    vertical-align: text-top;
+}
+
+.bg-orange {
+    background-color: orange !important;
+}
+
+.property-info-content h2 {
+    margin: 1.5rem 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.property-info-content h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 3.5rem;
+    position: relative;
+    font-size: 20px;
+}
+
+.property-info-content h6:before {
+    width: 4px;
+    height: 25px;
+    background-color: var(--main-color);
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 0.75rem;
+}
+
+article p {
+    line-height: 28px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.property-detail-info-list {
+    background-color: #F1F5F9;
+    display: flex;
+}
+
+.property-detail-info-list ul:nth-child(1) {
+    padding: 3rem;
+    border-right: 1px solid #CBD5E1;
+}
+
+.property-detail-info-list ul li {
+    margin-bottom: 1rem;
+}
+
+.property-detail-info-list ul li span {
+    font-weight: 600;
+    margin-left: .5rem;
+}
+
+.property-detail-info-list ul:nth-child(2) {
+    padding: 3rem;
+}
+
+.text-main-color {
+    color: var(--main-color);
+}

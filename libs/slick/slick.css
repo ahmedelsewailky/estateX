@@ -98,6 +98,76 @@
 .slick-slide img {
     width: 100%;
     object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.slick-slide {
+    height: 340px;
+    overflow: hidden;
+}
+
+.slick-slider:hover img {
+    filter: grayscale(1) blur(2px);
+}
+
+.slick-slide img:hover {
+    filter: none !important;
+}
+
+.slider-gallery {
+    position: relative;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.prev.slick-arrow {
+    left: 0;
+}
+
+.next.slick-arrow {
+    right: 0;
+}
+
+.slider-gallery:hover .next {
+    right: 50px;
+    opacity: 1 !important;
+}
+
+.slider-gallery:hover .prev {
+    left: 50px;
+    opacity: 1 !important;
+}
+
+.prev.slick-arrow:hover,
+.next.slick-arrow:hover {
+    animation: pulseWhiteShadow 0.8s infinite;
+}
+
+@keyframes pulseWhiteShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 255, 255, 50%);
+        opacity: 0;
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgb(255, 255, 255, 0%);
+        opacity: 0;
+    }
 }
 
 .slick-loading .slick-slide {

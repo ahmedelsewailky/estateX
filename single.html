@@ -111,7 +111,7 @@
             </div>
         </section>
 
-        <div class="container-fluid px-0 position-relative slider-gallery">
+        <div class="container-fluid slider-gallery">
             <div class="property-gallery">
                 <a href="images/image-3.jpg" data-rel="lightcase:myCollection:slideshow" title="Image">
                     <img src="images/image-3.jpg" alt="">
@@ -133,16 +133,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <main class="main-page-content">
-                        <div class="d-flex">
-                            <span>Featured</span>
-                            <span>For Rent</span>
-                            <span><i class="bx bx-calendar"></i> May 12,2024</span>
-                            <span><i class="bx bx-chat"></i> 35 Comments</span>
+                    <article class="property-info-content">
+                        <div class="d-flex align-items-center">
+                            <span class="meta-category">Featured</span>
+                            <span class="meta-category bg-orange">For Rent</span>
+                            <span class="meta-date"><i class="bx bx-calendar"></i> May 12,2024</span>
+                            <span class="meta-comments ms-auto"><i class="bx bx-chat"></i> 35 Comments</span>
                         </div>
 
                         <h2>Diamond Manor Apartment</h2>
-                        <p><i class="bx bx-map"></i> Naser City,Cairo,Egypt</p>
+                        <div class="meta-location mb-4"><i class="bx bx-map"></i> Naser City,Cairo,Egypt</div>
 
                         <h6>Description</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel perspiciatis ea quidem
@@ -153,7 +153,237 @@
                             eos ipsam iusto repudiandae mollitia sed dolores! Incidunt, illum culpa fugit hic ipsam
                             excepturi veritatis tempora sequi autem modi delectus nesciunt laborum nostrum impedit
                             maxime corrupti expedita, voluptatum voluptates, dignissimos aperiam molestiae?</p>
-                    </main>
+
+                        <h6>Property Detail</h6>
+
+                        <div class="property-detail-info-list section-bg-1 clearfix mb-60">
+                            <ul>
+                                <li><label>Property ID:</label> <span>HZ29</span></li>
+                                <li><label>Home Area: </label> <span>120 sqft</span></li>
+                                <li><label>Rooms:</label> <span>7</span></li>
+                                <li><label>Baths:</label> <span>2</span></li>
+                                <li><label>Year built:</label> <span>1992</span></li>
+                            </ul>
+                            <ul>
+                                <li><label>Lot Area:</label> <span>HZ29 </span></li>
+                                <li><label>Lot dimensions:</label> <span>120 sqft</span></li>
+                                <li><label>Beds:</label> <span>7</span></li>
+                                <li><label>Price:</label> <span>2</span></li>
+                                <li><label>Property Status:</label> <span>For Sale</span></li>
+                            </ul>
+                        </div>
+
+                        <h6>Amenities</h6>
+                        <div class="property-details-amenities mb-60">
+                            <ul class="overflow-hidden ps-5">
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Air Conditioning
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Gym
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Microwave
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Swimming Pool
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    WiFi
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Barbeque
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Recreation
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Microwave
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Basketball Cout
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Fireplace
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Refrigerator
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Window Coverings
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Washer
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    24x7 Security
+                                </li>
+                                <li class="w-50 float-start mb-2">
+                                    <i class="bx bx-check-double text-main-color me-2"></i>
+                                    Indoor Game
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h6>Location</h6>
+                        <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:350px;">
+                            <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                                    style="height:100%;width:100%;border:0;" frameborder="0"
+                                    src="https://www.google.com/maps/embed/v1/directions?origin=naser+city&destination=cairo&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                            </div><a class="code-for-google-map" rel="nofollow"
+                                href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap
+                                themes</a>
+                            <style>
+                                #embed-ded-map-canvas img {
+                                    max-width: none !important;
+                                    background: none !important;
+                                    font-size: inherit;
+                                    font-weight: inherit;
+                                }
+                            </style>
+                        </div>
+                    </article>
+
+                    <div
+                        class="ltn__shop-details-tab-content-inner--- ltn__shop-details-tab-inner-2 ltn__product-details-review-inner mb-60">
+                        <h4 class="title-2">Customer Reviews</h4>
+                        <div class="product-ratting">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                <li><a href="#"><i class="far fa-star"></i></a></li>
+                                <li class="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- comment-area -->
+                        <div class="ltn__comment-area mb-30">
+                            <div class="ltn__comment-inner">
+                                <ul>
+                                    <li>
+                                        <div class="ltn__comment-item clearfix">
+                                            <div class="ltn__commenter-img">
+                                                <img src="img/testimonial/1.jpg" alt="Image">
+                                            </div>
+                                            <div class="ltn__commenter-comment">
+                                                <h6><a href="#">Adam Smit</a></h6>
+                                                <div class="product-ratting">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                        <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+                                                    omnis fugit corporis iste magnam ratione.</p>
+                                                <span class="ltn__comment-reply-btn">September 3, 2020</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ltn__comment-item clearfix">
+                                            <div class="ltn__commenter-img">
+                                                <img src="img/testimonial/3.jpg" alt="Image">
+                                            </div>
+                                            <div class="ltn__commenter-comment">
+                                                <h6><a href="#">Adam Smit</a></h6>
+                                                <div class="product-ratting">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                        <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+                                                    omnis fugit corporis iste magnam ratione.</p>
+                                                <span class="ltn__comment-reply-btn">September 2, 2020</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ltn__comment-item clearfix">
+                                            <div class="ltn__commenter-img">
+                                                <img src="img/testimonial/2.jpg" alt="Image">
+                                            </div>
+                                            <div class="ltn__commenter-comment">
+                                                <h6><a href="#">Adam Smit</a></h6>
+                                                <div class="product-ratting">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                        <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+                                                    omnis fugit corporis iste magnam ratione.</p>
+                                                <span class="ltn__comment-reply-btn">September 2, 2020</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- comment-reply -->
+                        <div class="ltn__comment-reply-area ltn__form-box mb-30">
+                            <form action="#">
+                                <h4>Add a Review</h4>
+                                <div class="mb-30">
+                                    <div class="add-a-review">
+                                        <h6>Your Ratings:</h6>
+                                        <div class="product-ratting">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-item input-item-textarea ltn__custom-icon">
+                                    <textarea placeholder="Type your comments...."></textarea>
+                                </div>
+                                <div class="input-item input-item-name ltn__custom-icon">
+                                    <input type="text" placeholder="Type your name....">
+                                </div>
+                                <div class="input-item input-item-email ltn__custom-icon">
+                                    <input type="email" placeholder="Type your email....">
+                                </div>
+                                <div class="input-item input-item-website ltn__custom-icon">
+                                    <input type="text" name="website" placeholder="Type your website....">
+                                </div>
+                                <label class="mb-0"><input type="checkbox" name="agree"> Save my name, email, and
+                                    website in this browser for the next time I comment.</label>
+                                <div class="btn-wrapper">
+                                    <button class="btn theme-btn-1 btn-effect-1 text-uppercase"
+                                        type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-4">
