@@ -71,7 +71,7 @@ ul {
     list-style: none;
 }
 
-.form-control,
+.form-control:not(textarea.form-control),
 .form-select,
 .btn {
     --elment-height: 3rem;
@@ -87,6 +87,12 @@ ul {
     outline: none;
     box-shadow: none;
     border-color: var(--main-color);
+}
+
+textarea.form-control {
+    border-radius: 0;
+    font-size: inherit;
+    text-transform: capitalize;
 }
 
 .btn {
@@ -996,7 +1002,7 @@ a.page-link {
     font-weight: 600;
 }
 
-.property-info-content h6 {
+.property-info-content > h6 {
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 3.5rem;
@@ -1004,7 +1010,7 @@ a.page-link {
     font-size: 20px;
 }
 
-.property-info-content h6:before {
+.property-info-content > h6:before {
     width: 4px;
     height: 25px;
     background-color: var(--main-color);
@@ -1045,4 +1051,37 @@ article p {
 
 .text-main-color {
     color: var(--main-color);
+}
+
+.comment-form {
+    padding: 3rem;
+    background-color: #F1F5F9;
+}
+
+.comment-form h4 {
+    font-size: 21px;
+    margin-bottom: .5rem;
+}
+
+.add-a-review h6 {
+    font-size: 13px;
+    margin-right: .5rem;
+}
+
+.add-a-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.product-ratting i {
+    color: orange;
+    font-size: 13px;
+}
+
+.comment-element {
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #E2E8F0;
+    align-items: center;
 }
