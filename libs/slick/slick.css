@@ -106,12 +106,9 @@
     overflow: hidden;
 }
 
-.slick-slider:hover img {
-    filter: grayscale(1) blur(2px);
-}
-
-.slick-slide img:hover {
-    filter: none !important;
+.slick-slide img {
+    width: 100%;
+    height: 100%;
 }
 
 .slider-gallery {

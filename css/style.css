@@ -3,6 +3,7 @@
     --main-rgb-color: 0, 148, 49;
     --dark-color: #2f3531;
     --box-shadow: 2px 8px 15px rgb(0, 0, 0, 0.1);
+    --border-color: #E2E8F0;
 }
 
 body {
@@ -811,12 +812,16 @@ main.filter-results-area form {
     display: flex;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 form button i {
     font-size: 1rem;
     width: 30px;
+}
+
+.property-item {
+    margin-bottom: 1.5rem;
 }
 
 .property-image img {
@@ -827,11 +832,12 @@ form button i {
 .property-details {
     background-color: white;
     padding: 2rem;
-    box-shadow: 2px 8px 15px rgb(0, 0, 0, 0.1);
+    transition: .3s;
+    border: 1px solid var(--border-color);
 }
 
-.property-item {
-    margin-bottom: 1.5rem;
+.property-item:hover .property-details {
+    box-shadow: 2px 8px 15px rgb(0, 0, 0, 0.1);
 }
 
 span.info-label {
@@ -841,7 +847,7 @@ span.info-label {
 }
 
 .property-details .title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin: .75rem 0;
 }
@@ -882,6 +888,14 @@ span.info-label {
     font-size: 18px;
 }
 
+.slider-gallery .slick-slider:hover img {
+    filter: grayscale(1) blur(2px);
+}
+
+.slider-gallery .slick-slide img:hover {
+    filter: none !important;
+} 
+
 .filter-sidebar {
     border: 1px solid #CBD5E1;
     padding: 2rem;
@@ -892,6 +906,8 @@ span.info-label {
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
 }
 
 .filter-sidebar .form-check-label {
@@ -1050,6 +1066,8 @@ article p {
 .comment-form {
     padding: 3rem;
     background-color: #F1F5F9;
+    border: 1px solid var(--border-color);
+    border-top: 0;
 }
 
 .comment-form h4 {
@@ -1091,7 +1109,7 @@ article p {
     font-weight: 600;
     margin-bottom: 1rem;
     position: relative;
-    font-size: 20px;
+    font-size: 1.125rem;
 }
 
 article .section-title {
@@ -1139,6 +1157,37 @@ article .section-title {
     line-height: 45px;
 }
 
+.product-price del {
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+}
+
+.product-price {
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.widget .slick-slide {
+    height: 100%;
+    overflow: hidden;
+}
+
+.tag-widget a {
+    background-color: var(--border-color);
+    font-size: 12px;
+    padding: .5rem 1rem;
+    margin-bottom: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.tag-widget a:hover {
+    color: white;
+    background-color: var(--dark-color);
+}
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
 .bs-tooltip-top .tooltip-arrow::before {
     border-top-color: var(--main-color);

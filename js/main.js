@@ -96,9 +96,7 @@ $(function () {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
-        arrows: true,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
+        dots: true,
     });
 
     $("a[data-rel]").lightcase();
