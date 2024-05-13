@@ -71,6 +71,18 @@ ul {
     list-style: none;
 }
 
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
+}
+
 .form-control:not(textarea.form-control),
 .form-select,
 .btn {
@@ -1002,24 +1014,6 @@ a.page-link {
     font-weight: 600;
 }
 
-.property-info-content > h6 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-    margin-top: 3.5rem;
-    position: relative;
-    font-size: 20px;
-}
-
-.property-info-content > h6:before {
-    width: 4px;
-    height: 25px;
-    background-color: var(--main-color);
-    content: '';
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 0.75rem;
-}
-
 article p {
     line-height: 28px;
     margin-bottom: 1rem;
@@ -1084,4 +1078,72 @@ article p {
     padding: 1.5rem 0;
     border-bottom: 1px solid #E2E8F0;
     align-items: center;
+}
+
+
+.widget {
+    padding: 2rem;
+    border: 1px solid #E2E8F0;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 20px;
+}
+
+article .section-title {
+    margin-top: 3.5rem;
+}
+
+.section-title:before {
+    width: 4px;
+    height: 25px;
+    background-color: var(--main-color);
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 0.75rem;
+}
+
+.author-widget img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.widget.author-widget {
+    text-align: center;
+}
+
+.widget.author-widget h5 {
+    margin-top: 1rem;
+}
+
+.widget.author-widget small {
+    margin-top: .5rem;
+    display: block;
+}
+
+.widget.author-widget .product-ratting {
+    margin: 1rem 0;
+}
+
+.widget.author-widget .socials i {
+    color: #94A3B8;
+    font-size: 19px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--main-color);
+}
+
+.tooltip-inner {
+    background-color: var(--main-color);
 }

@@ -92,5 +92,16 @@ $(function () {
         nextArrow: $('.next'),
     });
 
+    $('.popular-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+    });
+
     $("a[data-rel]").lightcase();
+
+    $("[data-bs-toggle='tooltip']").tooltip();
 });
