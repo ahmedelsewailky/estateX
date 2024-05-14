@@ -28,7 +28,7 @@ estatex is a free to use Bootstrap template. This template uses the fifth versio
  
 
 ## Other templates and useful resources
-* [Olivia](https://ahmedelsewailky.github.io/Olivia/) - Free bootstrap template for multi porpuse of uses newspaper, magazine or blog.
+* [Olivia](https://github.com/ahmedelsewailky/Olivia) - Free bootstrap template for multi porpuse of uses newspaper, magazine or blog.
 
 ## License information
 eStateX is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that Colorlib is the original author of this template.
