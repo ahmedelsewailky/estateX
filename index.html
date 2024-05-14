@@ -28,68 +28,66 @@
 <body>
 
     <div id="app">
+        <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html" title="Logo">
+                    <img src="images/logo.png" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" title="Menu Toggle"
+                    data-bs-target="#offcanvas" aria-controls="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Rent
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Sell
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex phone-info">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class='bx bx-phone fs-4 text-main-color'></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
-                                    <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                <div class="offcanvas offcanvas-end w-100" id="offcanvas">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html" title="Logo">
+                            <img src="images/logo.png" height="50" alt="">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="single.html">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="search.html">Search</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex phone-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-phone fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
+                                        <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex mail-info">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class='bx bx-envelope fs-4 text-main-color'></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
-                                    <span class="fs-14 fw-semibold">example@mail.com</span>
+                            <div class="col-6">
+                                <div class="d-flex mail-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-envelope fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
+                                        <span class="fs-14 fw-semibold">example@mail.com</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +95,10 @@
                 </div>
             </div>
         </nav>
+        <!-- ./navbar -->
 
+
+        <!-- Header Start -->
         <header class="header">
             <div class="container">
                 <div class="header-inner">
@@ -119,12 +120,15 @@
                 </div>
             </div>
         </header>
+        <!-- ./header -->
 
+
+        <!-- Filter Search Box -->
         <div class="estate-search-box">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="location" id="location" class="form-select" title="Select location">
+                        <select name="location" id="location" class="w-100" title="Select location">
                             <option value="" hidden>Choose area</option>
                             <option value="">Cairo</option>
                             <option value="">Alexandria</option>
@@ -133,7 +137,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="property_estate" id="property_estate" class="form-select" title="Select property estate">
+                        <select name="property_estate" id="property_estate" class="w-100"
+                            title="Select property estate">
                             <option value="" hidden>Property State</option>
                             <option value="">Open house</option>
                             <option value="">Rent</option>
@@ -141,7 +146,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-3 mb-3 mb-md-0">
-                        <select name="property_type" id="property_type" class="form-select" title="Select property type">
+                        <select name="property_type" id="property_type" class="w-100"
+                            title="Select property type">
                             <option value="" hidden>Property Type</option>
                             <option value="">Apartment</option>
                             <option value="">Co-op</option>
@@ -155,16 +161,19 @@
                 </div>
             </div>
         </div>
+        <!-- ./estate-search-box -->
 
+
+        <!-- About Us -->
         <section class="section about-us-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 d-none d-md-block">
                         <div class="position-relative">
                             <img src="images/image-10.jpg" height="500" alt="">
-                            <img src="images/image-8.jpg" class="bottom-15 end-0 position-absolute shadow-sm"
+                            <img src="images/image-4.jpg" class="bottom-15 end-0 position-absolute shadow-sm"
                                 height="200" alt="">
-                        </div>  
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 offset-md-1">
                         <h6 class="section-title">About us</h6>
@@ -197,7 +206,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./about-us-area -->
 
+
+        <!-- Statistics -->
         <section class="section statistic-area">
             <div class="container">
                 <div class="row">
@@ -237,7 +249,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./statistic-area -->
 
+
+        <!-- Property Store -->
         <section class="section property-store-area">
             <div class="container">
                 <div class="row">
@@ -269,7 +284,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./property-store-area -->
 
+
+        <!-- Services -->
         <section class="section services-area bg-light">
             <div class="container">
                 <div class="text-center mb-6">
@@ -313,7 +331,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./services-area -->
 
+
+        <!-- Featured Listing -->
         <section class="section featured-listing-area">
             <div class="container">
                 <div class="text-center mb-6">
@@ -606,7 +627,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./featured-listing-area -->
 
+
+        <!-- Plane -->
         <section class="section plane-area">
             <div class="container-fluid">
                 <div class="text-center mb-6">
@@ -648,7 +672,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./plane-area -->
 
+
+        <!-- Aminities -->
         <section class="section aminities-area">
             <div class="container">
                 <div class="text-center mb-6">
@@ -731,7 +758,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./aminities-area -->
 
+
+        <!-- Testimonial -->
         <section class="section testimonial-area bg-light">
             <div class="container">
                 <div class="text-center mb-6">
@@ -811,7 +841,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./testimonial-area -->
+        
 
+        <!-- Call To Action -->
         <section class="section call-to-action-area position-relative pb-0 mb-0">
             <div class="container">
                 <div class="call-to-action-inner">
@@ -825,13 +858,19 @@
                 </div>
             </div>
         </section>
+        <!-- ./call-to-action-area -->
 
+
+        <!-- Footer -->
         <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="index.html">EstateX</a>
-                        <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus veniam
+                        <a href="index.html" title="eStateX">
+                            <img src="images/logo_reverse.png" alt="Logo">
+                        </a>
+                        <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus
+                            veniam
                             vitae modi est.</p>
                         <ul class="nav flex-column ms-3">
                             <li class="nav-item my-2">
@@ -848,10 +887,10 @@
                             </li>
                         </ul>
                         <div class="social-links">
-                            <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" target="_blank" title="Github"><i class="bx bxl-github"></i></a>
-                            <a href="#" target="_blank" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
-                            <a href="#" target="_blank" title="Twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook" rel="noopener"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github" rel="noopener"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank" title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i class="bx bxl-twitter"></i></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
@@ -878,14 +917,18 @@
                         <h6>News Letter</h6>
                         <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
                         <form action="?" method="get">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email" autocomplete="email">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email"
+                                autocomplete="email">
                             <button type="button" class="btn" title="Subscribe"><i class="bx bx-send"></i></button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ./footer -->
 
+
+        <!-- Copy Rights -->
         <div class="copy-right">
             <div class="container">
                 <div class="d-md-flex align-items-center justify-content-between">
@@ -904,6 +947,7 @@
                 </div>
             </div>
         </div>
+        <!-- ./copy-right -->
     </div>
 
 
@@ -915,6 +959,9 @@
     <script src="libs/counterjs/jquery.counterup.min.js"></script>
     <script src="libs/niceselect/js/jquery.nice-select.min.js"></script>
     <script src="libs/jquery_ui/jquery-ui.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/lightcase/js/lightcase.js"></script>
+    <script src="libs/lightcase/js/jquery.events.touch.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

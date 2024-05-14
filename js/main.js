@@ -83,13 +83,27 @@ $(function () {
     });
     $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1));
 
+    // $(window).resize(function () {
+    //     $('.property-gallery').slick('resize');
+    // });
+
     $('.property-gallery').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 3,
         arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
     });
 
     $('.popular-slider').slick({

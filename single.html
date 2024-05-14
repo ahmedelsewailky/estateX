@@ -31,66 +31,63 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html" title="Logo">
+                    <img src="images/logo.png" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" title="Menu Toggle"
+                    data-bs-target="#offcanvas" aria-controls="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Rent
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Sell
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex phone-info">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class='bx bx-phone fs-4 text-main-color'></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
-                                    <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                <div class="offcanvas offcanvas-end w-100" id="offcanvas">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html" title="Logo">
+                            <img src="images/logo.png" height="50" alt="">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="single.html">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="search.html">Search</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex phone-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-phone fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">PHONE</span>
+                                        <span class="fs-14 fw-semibold">(+20) 123 456 789</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex mail-info">
-                                <div class="flex-shrink-0 me-3">
-                                    <i class='bx bx-envelope fs-4 text-main-color'></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
-                                    <span class="fs-14 fw-semibold">example@mail.com</span>
+                            <div class="col-6">
+                                <div class="d-flex mail-info">
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class='bx bx-envelope fs-4 text-main-color'></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="fw-semibold fs-12 d-block text-muted">EMAIL ADDRESS</span>
+                                        <span class="fs-14 fw-semibold">example@mail.com</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -240,21 +237,13 @@
                         </div>
 
                         <h6 class="section-title">Location</h6>
-                        <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:350px;">
-                            <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
-                                    style="height:100%;width:100%;border:0;" frameborder="0"
+                        <div class="g-map">
+                            <div id="embed-ded-map-canvas">
+                                <iframe frameborder="0" title="Google Map"
                                     src="https://www.google.com/maps/embed/v1/directions?origin=naser+city&destination=cairo&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                             </div><a class="code-for-google-map" rel="nofollow"
                                 href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap
                                 themes</a>
-                            <style>
-                                #embed-ded-map-canvas img {
-                                    max-width: none !important;
-                                    background: none !important;
-                                    font-size: inherit;
-                                    font-weight: inherit;
-                                }
-                            </style>
                         </div>
 
                         <h6 class="section-title">Customer Reviews</h6>
@@ -593,7 +582,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="index.html">EstateX</a>
+                        <a href="index.html" title="eStateX">
+                            <img src="images/logo_reverse.png" alt="Logo">
+                        </a>
                         <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quae ducimus
                             veniam
                             vitae modi est.</p>
@@ -612,10 +603,10 @@
                             </li>
                         </ul>
                         <div class="social-links">
-                            <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" target="_blank" title="Github"><i class="bx bxl-github"></i></a>
-                            <a href="#" target="_blank" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
-                            <a href="#" target="_blank" title="Twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook" rel="noopener"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github" rel="noopener"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank" title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i class="bx bxl-twitter"></i></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
@@ -670,7 +661,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Js Files & Libraries -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
