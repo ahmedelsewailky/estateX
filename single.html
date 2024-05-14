@@ -29,6 +29,7 @@
 <body>
 
     <div id="app">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html" title="Logo">
@@ -48,7 +49,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About</a>
@@ -59,7 +60,7 @@
                                     Pages
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="single.html">Property Details</a></li>
+                                    <li><a class="dropdown-item active" href="single.html">Property Details</a></li>
                                     <li><a class="dropdown-item" href="search.html">Search</a></li>
                                 </ul>
                             </li>
@@ -95,7 +96,10 @@
                 </div>
             </div>
         </nav>
+        <!-- ./navbar -->
 
+
+        <!-- Breadcrumb -->
         <section class="section page-breadcrumb">
             <div class="container">
                 <h2>Property details</h2>
@@ -107,7 +111,10 @@
                 </nav>
             </div>
         </section>
+        <!-- ./page-breadcrumb -->
 
+
+        <!-- Slider Gallery -->
         <div class="container-fluid slider-gallery">
             <div class="property-gallery">
                 <a href="images/image-3.jpg" data-rel="lightcase:myCollection:slideshow" title="Image">
@@ -126,9 +133,12 @@
             <div class="prev"><i class='bx bx-left-arrow-alt'></i></div>
             <div class="next"><i class='bx bx-right-arrow-alt'></i></div>
         </div>
+        <!-- ./slider-gallery -->
+
 
         <div class="container">
             <div class="row">
+                <!-- Page Content -->
                 <div class="col-12 col-md-8">
                     <article class="property-info-content">
                         <div class="d-flex align-items-center">
@@ -348,6 +358,7 @@
                     </article>
                 </div>
 
+                <!-- Sidebar -->
                 <div class="col-12 col-md-4">
                     <aside class="sidebar">
                         <div class="widget author-widget">
@@ -364,17 +375,22 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio,
                                 eligendi suscipit reprehenderit atque.</p>
                             <div class="socials">
-                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" title="Facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" title="Twitter"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
-                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" title="Github"><i class="bx bxl-github"></i></a>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+                                    title="Facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+                                    title="Twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+                                    title="Linkedin"><i class="bx bxl-linkedin"></i></a>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+                                    title="Github"><i class="bx bxl-github"></i></a>
                             </div>
                         </div>
 
                         <div class="widget search-widget">
                             <h6 class="section-title">Search Objects</h6>
                             <form action="#" class="d-flex">
-                                <input type="text" name="search" class="form-control" placeholder="Search your keyword...">
+                                <input type="text" name="search" class="form-control"
+                                    placeholder="Search your keyword...">
                                 <button type="submit" class="btn" title="Search"><i class="bx bx-search"></i></button>
                             </form>
                         </div>
@@ -383,8 +399,10 @@
                             <h6 class="section-title">Drop Messege For Book</h6>
                             <form action="#">
                                 <input type="text" name="yourname" class="form-control mb-3" placeholder="Your Name*">
-                                <input type="text" name="youremail" class="form-control mb-3" placeholder="Your e-Mail*">
-                                <textarea name="yourmessage" rows="5" class="form-control mb-3" placeholder="Write Message..."></textarea>
+                                <input type="text" name="youremail" class="form-control mb-3"
+                                    placeholder="Your e-Mail*">
+                                <textarea name="yourmessage" rows="5" class="form-control mb-3"
+                                    placeholder="Write Message..."></textarea>
                                 <button type="submit" class="btn">Send Messege</button>
                             </form>
                         </div>
@@ -459,11 +477,16 @@
                         <div class="widget category-widget">
                             <h6 class="section-title">Top Categories</h6>
                             <ul>
-                                <li><a href="#" class="d-flex justify-content-between my-4">Apartments <span>(26)</span></a></li>
-                                <li><a href="#" class="d-flex justify-content-between my-4">Picture Stodio <span>(30)</span></a></li>
-                                <li><a href="#" class="d-flex justify-content-between my-4">Office <span>(71)</span></a></li>
-                                <li><a href="#" class="d-flex justify-content-between my-4">Luxary Vilas <span>(56)</span></a></li>
-                                <li><a href="#" class="d-flex justify-content-between my-4">Duplex House <span>(60)</span></a></li>
+                                <li><a href="#" class="d-flex justify-content-between my-4">Apartments
+                                        <span>(26)</span></a></li>
+                                <li><a href="#" class="d-flex justify-content-between my-4">Picture Stodio
+                                        <span>(30)</span></a></li>
+                                <li><a href="#" class="d-flex justify-content-between my-4">Office <span>(71)</span></a>
+                                </li>
+                                <li><a href="#" class="d-flex justify-content-between my-4">Luxary Vilas
+                                        <span>(56)</span></a></li>
+                                <li><a href="#" class="d-flex justify-content-between my-4">Duplex House
+                                        <span>(60)</span></a></li>
                             </ul>
                         </div>
 
@@ -544,26 +567,27 @@
 
                         <div class="widget tag-widget">
                             <h6 class="section-title">Popular Tags</h6>
-                                <a href="#">Popular</a>
-                                <a href="#">desgin</a>
-                                <a href="#">ux</a>
-                                <a href="#">usability</a>
-                                <a href="#">develop</a>
-                                <a href="#">icon</a>
-                                <a href="#">Car</a>
-                                <a href="#">Service</a>
-                                <a href="#">Repairs</a>
-                                <a href="#">Auto Parts</a>
-                                <a href="#">Oil</a>
-                                <a href="#">Dealer</a>
-                                <a href="#">Oil Change</a>
-                                <a href="#">Body Color</a>
+                            <a href="#">Popular</a>
+                            <a href="#">desgin</a>
+                            <a href="#">ux</a>
+                            <a href="#">usability</a>
+                            <a href="#">develop</a>
+                            <a href="#">icon</a>
+                            <a href="#">Car</a>
+                            <a href="#">Service</a>
+                            <a href="#">Repairs</a>
+                            <a href="#">Auto Parts</a>
+                            <a href="#">Oil</a>
+                            <a href="#">Dealer</a>
+                            <a href="#">Oil Change</a>
+                            <a href="#">Body Color</a>
                         </div>
                     </aside>
                 </div>
             </div>
         </div>
 
+        <!-- Call To Action -->
         <section class="section call-to-action-area position-relative pb-0 mb-0">
             <div class="container">
                 <div class="call-to-action-inner">
@@ -577,7 +601,10 @@
                 </div>
             </div>
         </section>
+        <!-- ./call-to-action-area -->
 
+
+        <!-- Footer -->
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -603,10 +630,14 @@
                             </li>
                         </ul>
                         <div class="social-links">
-                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook" rel="noopener"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github" rel="noopener"><i class="bx bxl-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank" title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
-                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://facebook.com/ahmedelsewailky" target="_blank" title="Facebook"
+                                rel="noopener"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://github.com/ahmedelsewailky" target="_blank" title="Github"
+                                rel="noopener"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-elsewailky-a83882144/" target="_blank"
+                                title="Linkedin" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://facebook.com/elsewailky" target="_blank" title="Twitter" rel="noopener"><i
+                                    class="bx bxl-twitter"></i></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
@@ -641,7 +672,10 @@
                 </div>
             </div>
         </div>
+        <!-- ./footer -->
 
+
+        <!-- Copy Rights -->
         <div class="copy-right">
             <div class="container">
                 <div class="d-md-flex align-items-center justify-content-between">
@@ -660,6 +694,7 @@
                 </div>
             </div>
         </div>
+        <!-- ./copy-right -->
     </div>
 
     <!-- Js Files & Libraries -->
