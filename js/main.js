@@ -1,9 +1,5 @@
 $(function () {
-    // "use strict";
-
-    $(window).on("resize", function (e) {
-        console.log(e.clientX);
-    });
+    "use strict";
 
     $("section.about-us-area").on("mousemove", function (e) {
         $("section.about-us-area img:nth-child(1)").css({
@@ -82,10 +78,6 @@ $(function () {
         slide: function (event, ui) { $("#priceRange").val(ui.values[0] + " - " + ui.values[1]); }
     });
     $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1));
-
-    // $(window).resize(function () {
-    //     $('.property-gallery').slick('resize');
-    // });
 
     $('.property-gallery').slick({
         centerMode: true,
