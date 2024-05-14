@@ -4,6 +4,8 @@ estatex is a free to use Bootstrap template. This template uses the fifth versio
 
 
 ## Template Demo
+[Live Demo](https://ahmedelsewailky.github.io/estateX/)
+
 ![This is an alt text.](https://raw.githubusercontent.com/ahmedelsewailky/estateX/master/screenshot.png)
 
 ## Scripts Included: 
