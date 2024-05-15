@@ -1,6 +1,6 @@
 # eStateX
 
-estatex is a free to use Bootstrap template. This template uses the fifth version of the Bootstrap framework along with a variety of powerful jQuery plugins and tools that add interactive features to the design.
+estatex is a free Bootstrap template for real estate company. This template uses Bootstrap 5 along with a variety of powerful jQuery plugins and tools that add interactive features to the design.
 
 
 ## Template Demo
