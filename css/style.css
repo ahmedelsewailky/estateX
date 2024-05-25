@@ -21,7 +21,7 @@ a,
 
 a:hover,
 .nav-link:hover {
-    color: var(--main-color);
+    color: inherit;
 }
 
 h1,
@@ -392,7 +392,27 @@ a.play-video-btn.pulse {
     margin-left: 1.5rem;
     background-color: white;
     color: var(--main-color);
-    animation: pulseShadow 2s infinite;
+    position: relative;
+}
+
+a.play-video-btn.pulse:before,
+a.play-video-btn.pulse:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+a.play-video-btn.pulse:before {
+    background-color: white;
+    animation: pulsing 2s 0.25s linear infinite;
+}
+
+a.play-video-btn.pulse:after {
+    background-color: white;
+    animation: pulsing 2s linear infinite;
 }
 
 .estate-search-box {
@@ -484,9 +504,10 @@ a.play-video-btn.pulse {
 }
 
 .static-item .counter {
-    font-size: 2.5rem;
+    font-size: 28px;
     font-weight: 600;
     margin-right: 6px;
+    margin-top: 12px;
 }
 
 /*  =========================================================================   Property Store  */
@@ -702,8 +723,11 @@ a.play-video-btn.pulse {
         visibility: visible;
     }
 
-    .owl-nav>button:hover {
-        animation: pulseShadow 2s infinite;
+    .testimonial-area .owl-carousel:hover .owl-nav>button {
+        --translate-button-size: 0;
+        opacity: 1;
+        z-index: 1;
+        visibility: visible;
     }
 }
 
@@ -718,17 +742,14 @@ a.play-video-btn.pulse {
     }
 
     .owl-nav>button:hover {
-        animation: pulseShadow 2s infinite;
+        animation: pulsing 2s infinite;
     }
 }
 
-@keyframes pulseShadow {
-    0% {
-        box-shadow: 0 0 0 rgb(0, 0, 0, 0.5);
-    }
-
+@keyframes pulsing {
     100% {
-        box-shadow: 0 0 50px rgb(0, 0, 0, 0);
+        transform: scale(2);
+        opacity: 0;
     }
 }
 
@@ -1334,4 +1355,15 @@ article .section-title {
     height: 100%;
     width: 100%;
     border: 0;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #00943180;
+    border-radius: 100%;
+    z-index: 999;
 }
